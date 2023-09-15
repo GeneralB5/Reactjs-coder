@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+}
+.navbar-header{
+    
+    position: relative;    
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.navbar-header a{
+    text-decoration: none;
+    color: rgb(61, 57, 57);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 1s;
+    will-change: auto;
+}
+.navbar-header a:hover{
+    translate: -3px -3px;
+    color: #000;
+}
+.Div-inicial-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 0;
+    padding-top: 10px;
+}
+.Div-de-logos{
+    display: flex;
+    width: 90px;
+    height: 50px;
+}
+.Carrito-logo{
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(109, 109, 109);
+    cursor:pointer;
+}
+.Div-D-Num-D-cart{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: absolute;
+    display: flex;
+    background-color: rgba(255, 192, 203, 0.76);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.Num-D-cart{
+    margin: auto;
+    font-size: 25px;
+}
+.Logo-header{
+    width:100px;
+    height: 100px;
+    filter: drop-shadow(0 0 0.75rem #dc143c);
+}
+.Headers{
+    background-color: rgb(235, 222, 222);
+    box-shadow: 
+    rgba(0, 0, 0, 0.09) 0px 2px 1px, 
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, 
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.h2-header{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    filter: drop-shadow( -3px -2px 0.1rem #272727);
+}
+.Nav-Divss{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(223, 187, 197, 0.76);
+    height: 80px;
+    box-shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+}
+@media (max-width : 704px){
+    .Nav-Divss{
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+}
+/* Footer             //////////////////////////////////// */
+.Footers{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(235, 222, 222);
+    box-shadow:  rgb(134, 131, 131) 0px 0px 20px 0px;
+}
+.Logo-Footer{
+    width:170px ;
+    height: 150px;
+
+}
+/* contador */
+.Div-contador{
+    display: flex;
+    width: 140px;
+    height: 20px;
+    justify-content: space-between;
+    border: solid 1px #000;
+    background-color: #696666;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.Div-contador p{
+    margin: auto;
+    font-size: 20px;
+}
+.Div-contador button{
+    border: none;
+    background-color: transparent;
+    border-radius: 8px;
+}
+/* gridtemplate para el proyectofinal */
