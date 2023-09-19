@@ -1,4 +1,4 @@
-import Logocarrito from '../img/header/shopping-cart-1105049.svg'
+import Logocarrito from '../../img/header/shopping-cart-1105049.svg'
 function Carrito(){
 return(
     <div className='Div-de-logos'>

@@ -1,10 +1,14 @@
 import Contador from "./componentes/contador";
-import Itemlistcontainer from "./componentes/itemlistcontainer";
+import Itemlistcontainer from "./componentes/itemlistcontainer/itemlistcontainer";
+import Navbar from "./componentes/navbar/navbar"
 function App() {
+  
   return (
     <>
-    <Itemlistcontainer greeting={"Buenas Coder :)"} />    
+    <Navbar />
+     <Itemlistcontainer greeting={"Buenas Coder :)"} />     
     <Contador />
+    
     </>   
   );
 }

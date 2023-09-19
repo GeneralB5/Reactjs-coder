@@ -1,5 +1,4 @@
-import Itemlistcontainer from "./itemlistcontainer"
-import Carritologo from "./carritologo.jsx"
+import Carritologo from "./carritologo"
 function Navbar (){
 return(
     <div className="Nav-Divss">
@@ -9,7 +8,7 @@ return(
         <a href="">Libreria</a><br></br>
         <a href="">Utencilios</a><br></br>
     </nav>
-    <Itemlistcontainer greeting={"SafeMarket"} clases={"h2-header"} />
+    <h2 className="h2-header" >{"SafeMarket"}</h2>
     <Carritologo />
     </div>
 )
