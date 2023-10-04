@@ -8,7 +8,6 @@ import { FacilitadorContext } from "./context/cartContext";
 function App() {
   
   return (
-    <FacilitadorContext>
     <Layout>
     <Navbar/>
     <Routes>
@@ -18,7 +17,6 @@ function App() {
     <Route path="*" element={<h1>Error 404</h1>} />
      </Routes>
     </Layout>   
-    </FacilitadorContext>
   );
 }
 export default App;
