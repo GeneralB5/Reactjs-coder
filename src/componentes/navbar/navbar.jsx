@@ -1,12 +1,13 @@
 import Carritologo from "./carritologo"
+import {NavLink} from "react-router-dom"
 function Navbar (){
 return(
     <div className="Nav-Divss">
     <nav className="navbar-header">
-        <a href="">Deportes</a><br></br>
-        <a href="">Muebles</a><br></br>
-        <a href="">Libreria</a><br></br>
-        <a href="">Utencilios</a><br></br>
+        <NavLink to="/" className={({isActive})=>isActive ? "activeOption":"option"} >Home</NavLink>
+        <NavLink to="/categoria/television" className={({isActive})=>isActive ? "activeOption":"option"} >Television</NavLink>
+        <NavLink to="/categoria/laptops" className={({isActive})=>isActive ? "activeOption":"option"} >Laptops</NavLink>
+        <NavLink to="/categoria/celulares" className={({isActive})=>isActive ? "activeOption":"option"} >Celulares</NavLink>
     </nav>
     <h2 className="h2-header" >{"SafeMarket"}</h2>
     <Carritologo />

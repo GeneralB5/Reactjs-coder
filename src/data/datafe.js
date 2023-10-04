@@ -1,6 +1,6 @@
 import {Products} from "./productos"
   
-export const traerDatos =()=>{
+export const TraerDatos =()=>{
   return new Promise( resolve => {
       setTimeout(() => {
           resolve(Products)}

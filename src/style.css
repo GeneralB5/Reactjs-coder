@@ -1,13 +1,15 @@
-body{
+body {
     margin: 0;
 }
-.navbar-header{
-    position: relative;    
+
+.navbar-header {
+    position: relative;
     display: flex;
     gap: 10px;
     padding-left: 20px;
 }
-.navbar-header a{
+
+.navbar-header a {
     text-decoration: none;
     color: rgb(61, 57, 57);
     font-size: 20px;
@@ -15,11 +17,13 @@ body{
     transition: 1s;
     will-change: auto;
 }
-.navbar-header a:hover{
+
+.navbar-header a:hover {
     translate: -3px -3px;
     color: #000;
 }
-.Div-inicial-header{
+
+.Div-inicial-header {
     display: flex;
     justify-content: space-between;
     margin: 10px;
@@ -27,21 +31,24 @@ body{
     padding-top: 10px;
     margin-bottom: 0;
 }
-.Div-de-logos{
+
+.Div-de-logos {
     display: flex;
     width: 90px;
     height: 50px;
 }
-.Carrito-logo{
+
+.Carrito-logo {
     margin: auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 2px solid rgb(109, 109, 109);
-    cursor:pointer;
+    cursor: pointer;
 }
-.Div-D-Num-D-cart{
+
+.Div-D-Num-D-cart {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     position: absolute;
     display: flex;
@@ -50,74 +57,314 @@ body{
     height: 30px;
     border-radius: 50%;
 }
-.Num-D-cart{
+
+.Num-D-cart {
     margin: auto;
     font-size: 25px;
 }
-.Logo-header{
-    width:100px;
+
+.Logo-header {
+    width: 100px;
     height: 100px;
     filter: drop-shadow(0 0 0.75rem #dc143c);
 }
-.Headers{
+
+.Headers {
     background-color: rgb(235, 222, 222);
-    box-shadow: 
-    rgba(0, 0, 0, 0.09) 0px 2px 1px, 
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, 
-    rgba(0, 0, 0, 0.09) 0px 8px 4px, 
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, 
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow:
+        rgba(0, 0, 0, 0.09) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-.h2-header{
+
+.h2-header {
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    filter: drop-shadow( -3px -2px 0.1rem #272727);
+    filter: drop-shadow(-3px -2px 0.1rem #272727);
 }
-.Nav-Divss{
+
+.Nav-Divss {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(223, 187, 197, 0.76);
     height: 80px;
-    box-shadow:rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
-@media (max-width : 704px){
-    .Nav-Divss{
+
+@media (max-width : 704px) {
+    .Nav-Divss {
         display: flex;
         flex-direction: column;
         height: 200px;
     }
 }
+
 /* Footer             //////////////////////////////////// */
-.Footers{
+.Footers {
     display: flex;
     justify-content: space-between;
     background-color: rgb(235, 222, 222);
-    box-shadow:  rgb(134, 131, 131) 0px 0px 20px 0px;
+    box-shadow: rgb(134, 131, 131) 0px 0px 20px 0px;
 }
-.Logo-Footer{
-    width:170px ;
+
+.Logo-Footer {
+    width: 170px;
     height: 150px;
 
 }
+
 /* contador */
-.Div-contador{
+.Div-contador {
+    justify-content: center;
+    align-items: center;
     display: flex;
-    width: 140px;
-    height: 20px;
+    width: 340px;
+    height: 30px;
     justify-content: space-between;
-    border: solid 1px #000;
-    background-color: #696666;
+    border: solid 2px #999999;
+    background-color: #f1efef;
     margin-bottom: 20px;
     border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.Div-contador p{
+
+.Div-contador p {
     margin: auto;
     font-size: 20px;
 }
-.Div-contador button{
+
+.Div-contador button {
     border: none;
     background-color: transparent;
     border-radius: 8px;
 }
+
 /* gridtemplate para el proyectofinal */
+/* cards */
+.card {
+    width: 190px;
+    height: 254px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-img {
+    background-color: #ffcaa6;
+    height: 40%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.card-info {
+    padding-top: 10%;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/*Text*/
+.text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+/*Button*/
+.card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+/*Hover*/
+.card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: #ffcaa6;
+}
+
+/* Div-containers1 */
+.Div-containers1 {
+    display: grid;
+    place-items: center;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* divcontainerdetail */
+.card {
+    width: auto;
+}
+
+.row {
+    height: 400px;
+}
+
+.img-detail {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.divDetailContainer {
+    height: 430px;
+}
+
+.Div-centerInterno {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Price-p {
+    padding-left: 30px;
+}
+
+.contador-espc {
+    margin-left: 30px;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+    max-width: 430px;
+}
+
+.DivContadorPrecio {
+    width: 400px;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-body {
+    max-width: 440px;
+}
+
+.Btn {
+    color: purple;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid purple;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+    width: 200px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.Btn:hover {
+    color: white;
+    background-color: purple;
+}
+
+.Btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: purple;
+    z-index: -1;
+    transition: all 1s;
+}
+
+.Btn:hover::before {
+    width: 160%;
+}
+
+.divDetailContainer {
+    max-width: min(1000px, 1000px);
+    margin: auto;
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-height: 615px;
+}
+
+@media(max-width:829px) {
+    .Div-contador {
+        padding-left: 0;
+        max-width: 300px;
+    }
+
+    .DivContadorPrecio {
+        max-width: 345px;
+    }
+}
+
+@media (max-width:768px) {
+    .img-detail {
+        width: 470px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .divDetailContainer {
+        margin: auto;
+        margin-top: 20px;
+        height: 750px;
+        max-width: 500px;
+    }
+
+    .Div-contador {
+        padding-left: 0;
+        max-width: 260px;
+    }
+
+    .card-text:last-child {
+        max-width: 330px;
+    }
+
+    .card-body {
+        max-width: 280px;
+    }
+}
+
+@media(max-width:356px) {
+    .DivContadorPrecio {
+        width: 250px;
+    }
+
+    .Div-contador {
+        padding-left: 0;
+        max-width: 180px;
+    }
+}
