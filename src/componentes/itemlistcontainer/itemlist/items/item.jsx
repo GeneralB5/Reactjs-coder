@@ -1,16 +1,22 @@
 import { Link } from "react-router-dom"
-function Item({ name, price, id }) {
-    console.log(name,price,id)
+function Item({ name, precio, id, img }) {
+    console.log(name,precio,id)
     return (
         <>
             <div className="card">
-                <div className="card-img"></div>
+                <div className="card-img" style={{
+                    backgroundImage:`url(${img})`,
+                    backgroundPosition:"center",
+                    backgroundRepeat:"no-repeat",
+                    backgroundSize:"contain"
+
+                }}></div>
                 <div className="card-info">
                     <p className="text-title">{name}</p>
                     <p className="text-body">Product description and details</p>
                 </div>
                 <div className="card-footer">
-                    <span className="text-title">${price}</span>
+                    <span className="text-title">${precio}</span>
                     <div className="card-button">
                         <Link to={`/detail/${id}`} >
                         <svg className="svg-icon" viewBox="0 0 20 20">

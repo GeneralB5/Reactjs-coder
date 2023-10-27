@@ -1,24 +1,33 @@
 import { useEffect, useState } from "react"
-import { GetIdProducts } from "../../data/dataid"
 import Itemdetaillist from "./itemdetaillist/itemdetaillist"
 import { useParams } from "react-router-dom"
-function ItemDetailContainer(){
-const [detail,setDetail]=useState([])
-const { itemid } = useParams()
-let num = parseInt(itemid)
-useEffect(()=>{
-GetIdProducts(num)
-.then(data=>{
-    console.log(data)
-    setDetail(data)
-}).catch(err=>{
-    console.log(err)
-})
-},[num])
-return(
-    <>  
-        <Itemdetaillist {...detail} />
-    </>
-)
+import Loading from "../loading"
+import { getProductsId } from "../../servicios/products"
+function ItemDetailContainer() {
+    const [Load, setLoad] = useState(false)
+    const [detail, setDetail] = useState([])
+    const { itemid } = useParams()
+    useEffect(() => {
+        
+        getProductsId(itemid)
+            .then(data => {
+                setDetail(data)
+            }).catch(err => {
+                console.log(err)
+            })
+            .finally(()=>{
+                setLoad(true)
+            })
+            return(
+                setLoad(false)
+            )
+    }, [itemid])
+    return (
+       <>
+           
+             {(Load != false) ? <Itemdetaillist {...detail} />:<Loading/>}
+                
+        </> 
+    )
 }
 export default ItemDetailContainer
