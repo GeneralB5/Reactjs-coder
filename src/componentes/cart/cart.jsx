@@ -10,8 +10,8 @@ function Cart(){
             cleanCart()
         }
         const handleclickSubmit= ()=>{
-            const key =getIsLogged()
-            console.log(key)
+            const key =getIsLogged().resp
+
             if(key){
             navs("/Checkout")
             }else{

@@ -13,9 +13,8 @@ export const FacilitadorContext = ({children})=> {
     const [username,setUsername] = useState(false)
     const [Num,setNum]=useState(0)
     const [initSig,setInitSig]= useState(false)
-    const [nam,setNam]=useState(0)
     const func = ()=>{  
-        if(nam > 0){
+        if(cart.length > 0){
         const numerocart = cart.map((data)=>{
                 const stock = data.stock
                 return stock
@@ -24,11 +23,10 @@ export const FacilitadorContext = ({children})=> {
             setNum(numerfinal)
         }else{
             setNum(0)
-            setNam(1)
         }
         }
         const func2 = ()=>{
-            if(nam > 0){
+            if(cart.length > 0){
             const Total = cart.map((data)=>{
                 const precio = data.price 
                 const stock =  data.stock
@@ -39,12 +37,12 @@ export const FacilitadorContext = ({children})=> {
             setTotal(numerfinal)
         }else{
             setTotal(0)
-            setNam(1)
         }
         }
     useEffect(()=>{
         if(initSig === false){
            const xs = JSON.parse(localStorage.getItem("carrito"))
+           console.log(xs)
             setCart(xs)
             setInitSig(true)
         }
