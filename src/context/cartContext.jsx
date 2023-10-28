@@ -13,34 +13,42 @@ export const FacilitadorContext = ({children})=> {
     const [username,setUsername] = useState(false)
     const [Num,setNum]=useState(0)
     const [initSig,setInitSig]= useState(false)
+    const [nam,setNam]=useState(0)
+    const func = ()=>{  
+        if(nam > 0){
+        const numerocart = cart.map((data)=>{
+                const stock = data.stock
+                return stock
+            })
+          const numerfinal = numerocart.reduce((acc,curre)=>acc+curre,0)
+            setNum(numerfinal)
+        }else{
+            setNum(0)
+            setNam(1)
+        }
+        }
+        const func2 = ()=>{
+            if(nam > 0){
+            const Total = cart.map((data)=>{
+                const precio = data.price 
+                const stock =  data.stock
+                const totales = precio*stock
+                return totales
+            })
+          const numerfinal = Total.reduce((acc,curre)=>acc+curre,0)
+            setTotal(numerfinal)
+        }else{
+            setTotal(0)
+            setNam(1)
+        }
+        }
     useEffect(()=>{
         if(initSig === false){
            const xs = JSON.parse(localStorage.getItem("carrito"))
             setCart(xs)
             setInitSig(true)
         }
-   const func = ()=>{  
-    if(cart.length > 0){
-    const numerocart = cart.map((data)=>{
-            const stock = data.stock
-            return stock
-        })
-      const numerfinal = numerocart.reduce((acc,curre)=>acc+curre,0)
-        setNum(numerfinal)
-    }else{setNum(0)}
-    }
-    const func2 = ()=>{
-        if(cart.length > 0){
-        const Total = cart.map((data)=>{
-            const precio = data.price 
-            const stock =  data.stock
-            const totales = precio*stock
-            return totales
-        })
-      const numerfinal = Total.reduce((acc,curre)=>acc+curre,0)
-        setTotal(numerfinal)
-    }else{setTotal(0)}
-    }
+   
     localStorage.setItem("carrito",JSON.stringify(cart))  
     func()
     func2()
