@@ -20,12 +20,14 @@ export const FacilitadorContext = ({children})=> {
             setInitSig(true)
         }
    const func = ()=>{  
+    if(cart.length>0){
     const numerocart = cart.map((data)=>{
             const stock = data.stock
             return stock
         })
       const numerfinal = numerocart.reduce((acc,curre)=>acc+curre,0)
         setNum(numerfinal)
+    }
     }
     const func2 = ()=>{
         const Total = cart.map((data)=>{
