@@ -27,7 +27,7 @@ export const FacilitadorContext = ({children})=> {
         })
       const numerfinal = numerocart.reduce((acc,curre)=>acc+curre,0)
         setNum(numerfinal)
-    }
+    }else{setNum(0)}
     }
     const func2 = ()=>{
         if(cart.length > 0){
@@ -39,7 +39,7 @@ export const FacilitadorContext = ({children})=> {
         })
       const numerfinal = Total.reduce((acc,curre)=>acc+curre,0)
         setTotal(numerfinal)
-    }
+    }else{setTotal(0)}
     }
     localStorage.setItem("carrito",JSON.stringify(cart))  
     func()
