@@ -30,6 +30,7 @@ export const FacilitadorContext = ({children})=> {
     }
     }
     const func2 = ()=>{
+        if(cart.length>0){
         const Total = cart.map((data)=>{
             const precio = data.price 
             const stock =  data.stock
@@ -38,6 +39,7 @@ export const FacilitadorContext = ({children})=> {
         })
       const numerfinal = Total.reduce((acc,curre)=>acc+curre,0)
         setTotal(numerfinal)
+    }
     }
     localStorage.setItem("carrito",JSON.stringify(cart))  
     func()
