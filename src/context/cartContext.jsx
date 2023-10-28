@@ -20,7 +20,7 @@ export const FacilitadorContext = ({children})=> {
             setInitSig(true)
         }
    const func = ()=>{  
-    if(cart.length>0){
+    if(cart.length > 0){
     const numerocart = cart.map((data)=>{
             const stock = data.stock
             return stock
@@ -30,7 +30,7 @@ export const FacilitadorContext = ({children})=> {
     }
     }
     const func2 = ()=>{
-        if(cart.length>0){
+        if(cart.length > 0){
         const Total = cart.map((data)=>{
             const precio = data.price 
             const stock =  data.stock
